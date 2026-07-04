@@ -22,6 +22,11 @@ No uses `npx wrangler deploy` como deploy command en Cloudflare Pages. Ese coman
 intenta publicar un Worker y falla si la cuenta no tiene configurado un subdominio
 `workers.dev` o una ruta de Worker.
 
+## Vercel
+
+El proyecto incluye `vercel.json` con un rewrite hacia `/index.html` para que las
+rutas internas de la SPA funcionen al recargar o abrir enlaces directos.
+
 ## Contenido
 
 Los datos migrados del sitio HTML original viven en `src/data/categories.json` y
